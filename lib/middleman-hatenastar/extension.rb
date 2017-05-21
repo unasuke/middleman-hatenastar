@@ -1,4 +1,5 @@
 require 'middleman-core'
+require 'middleman-hatenastar/generator'
 
 module Middleman
   module Hatenastar
@@ -9,26 +10,14 @@ module Middleman
 
       def initialize(app, options_hash={}, &block)
         super
+
+        @generator = ::Middleman::Hatenastar::Generator.new(options)
       end
 
-      
-      helpers do
-        def hatenastar(uri: 'aaa', title: 'aaaaaa', container: 'aaaa')
-          <<~SCRIPT
-            <script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
-            <script type="text/javascript">
-            Hatena.Star.SiteConfig = {
-              entryNodes: {
-                'section': {
-                  uri: "#{uri}",
-                  title: "#{title}",
-                  container: "#{container}"
-                }
-              }
-            };
-            </script>
-          SCRIPT
-        end
+      expose_to_template :hatenastar
+
+      def hatenastar(uri: nil, title: nil, container: nil)
+        @generator.generate(uri: uri, title: title, container: container)
       end
     end
   end
