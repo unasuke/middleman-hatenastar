@@ -20,14 +20,10 @@ module Middleman
         @generator = ::Middleman::Hatenastar::Generator.new(options)
       end
 
-      expose_to_template :hatenastar_tag, :hatenastar_token_tag
+      expose_to_template :hatenastar_tag
 
       def hatenastar_tag(uri: nil, title: nil, container: nil, entry_node: nil)
         @generator.generate(uri: uri, title: title, container: container, entry_node: entry_node)
-      end
-
-      def hatenastar_token_tag
-        @generator.token
       end
     end
   end
