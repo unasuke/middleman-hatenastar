@@ -4,9 +4,9 @@ require 'middleman-hatenastar/generator'
 module Middleman
   module Hatenastar
     class Extension < ::Middleman::Extension
-      #option :uri, 'h3 img aaaaaa', 'aaaa'
-      #option :title, 'h3', 'aaaa'
-      #option :container, 'h3', 'aaaa'
+      option :uri,       'h3 a', 'Permarink of the entry.'
+      option :title,     'h3',   'Entry title.'
+      option :container, 'h3',   'Set hatenastar to after of the this tag.'
 
       def initialize(app, options_hash={}, &block)
         super
