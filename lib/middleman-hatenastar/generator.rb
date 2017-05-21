@@ -27,15 +27,15 @@ module Middleman
         <<~TAG
           <script type="text/javascript" src="//s.hatena.ne.jp/js/HatenaStar.js"></script>
           <script type="text/javascript">
-          Hatena.Star.SiteConfig = {
-            entryNodes: {
-              "#{_entry_node}": {
-                uri: "#{_uri}",
-                title: "#{_title}",
-                container: "#{_container}"
+            Hatena.Star.SiteConfig = {
+              entryNodes: {
+                "#{_entry_node}": {
+                  uri: "#{_uri}",
+                  title: "#{_title}",
+                  container: "#{_container}"
+                }
               }
-            }
-          };
+            };
           </script>
         TAG
       end

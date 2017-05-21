@@ -1,1 +1,1 @@
-activate :hatenastar
+activate :hatenastar, token: 'token'
