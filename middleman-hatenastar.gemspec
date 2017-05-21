@@ -5,11 +5,11 @@ Gem::Specification.new do |s|
   s.name        = "middleman-hatenastar"
   s.version     = "0.0.1"
   s.platform    = Gem::Platform::RUBY
-  # s.authors     = ["Your Name"]
-  # s.email       = ["email@example.com"]
-  # s.homepage    = "http://example.com"
-  # s.summary     = %q{A short summary of your extension}
-  # s.description = %q{A longer description of your extension}
+  s.authors     = ["Your Name"]
+  s.email       = ["email@example.com"]
+  s.homepage    = "http://example.com"
+  s.summary     = %q{A short summary of your extension}
+  s.description = %q{A longer description of your extension}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

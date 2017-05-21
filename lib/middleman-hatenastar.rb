@@ -1,6 +1,6 @@
 require "middleman-core"
 
-Middleman::Extensions.register :middleman-hatenastar do
-  require "my-extension/extension"
-  MyExtension
+Middleman::Extensions.register :hatenastar do
+  require "middleman-hatenastar/extension"
+  ::Middleman::Hatenastar::Extension
 end
