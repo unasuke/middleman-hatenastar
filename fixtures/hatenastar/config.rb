@@ -1,1 +1,3 @@
-activate :hatenastar, token: 'token'
+activate :hatenastar,
+  token: 'token',
+  uri: 'uri string'
