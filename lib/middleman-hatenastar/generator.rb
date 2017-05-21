@@ -2,10 +2,20 @@ module Middleman
   module Hatenastar
     class Generator
       def initialize(option)
+        @token = option[:token]
         @uri = option[:uri]
         @title = option[:title]
         @container = option[:container]
         @entry_node = option[:entry_node]
+      end
+
+      def token
+        <<~TOKEN
+          <script type="text/javascript" src="//s.hatena.ne.jp/js/HatenaStar.js"></script>
+          <script type="text/javascript">
+            Hatena.Star.Token = '#{@token}';
+          </script>
+        TOKEN
       end
 
       def generate(uri: nil, title: nil, container: nil, entry_node: nil)
