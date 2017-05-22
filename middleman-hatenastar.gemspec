@@ -27,5 +27,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '~> 10.0'
   s.add_development_dependency 'rdoc'
   s.add_development_dependency 'rspec'
+  s.add_development_dependency 'unasukecop'
   s.add_development_dependency 'yard'
 end
