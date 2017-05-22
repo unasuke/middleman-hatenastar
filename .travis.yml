@@ -8,4 +8,4 @@ rvm:
   - ruby-head
 before_install: gem install bundler -v 1.14.3
 script:
-  - bundle exec test
+  - bundle exec rake test
