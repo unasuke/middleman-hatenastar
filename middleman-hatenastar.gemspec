@@ -1,9 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
+require 'middleman-hatenastar/version'
 
 Gem::Specification.new do |s|
   s.name        = "middleman-hatenastar"
-  s.version     = "0.0.1"
+  s.version     = ::Middleman::Hatenastar::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Yusuke Nakamura"]
   s.email       = ["yusuke1994525@gmail.com"]
