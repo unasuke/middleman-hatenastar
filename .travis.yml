@@ -1,0 +1,11 @@
+notifications:
+  email: false
+sudo: false
+language: ruby
+rvm:
+  - 2.3.4
+  - 2.4.1
+  - ruby-head
+before_install: gem install bundler -v 1.14.3
+script:
+  - bundle exec test
