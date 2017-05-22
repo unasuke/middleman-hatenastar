@@ -23,10 +23,12 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'aruba'
   s.add_development_dependency 'bundler', '~> 1.14'
   s.add_development_dependency 'capybara'
+  s.add_development_dependency 'codecov'
   s.add_development_dependency 'cucumber'
   s.add_development_dependency 'rake', '~> 10.0'
   s.add_development_dependency 'rdoc'
   s.add_development_dependency 'rspec'
+  s.add_development_dependency 'simplecov'
   s.add_development_dependency 'unasukecop'
   s.add_development_dependency 'yard'
 end

@@ -1,6 +1,7 @@
 # middleman-hatenastar
 
 [![Build Status](https://travis-ci.org/unasuke/middleman-hatenastar.svg?branch=master)](https://travis-ci.org/unasuke/middleman-hatenastar)
+[![codecov](https://codecov.io/gh/unasuke/middleman-hatenastar/branch/master/graph/badge.svg)](https://codecov.io/gh/unasuke/middleman-hatenastar)
 
 middleman-hatenastar is a hatenastar extension for Middleman.
 
