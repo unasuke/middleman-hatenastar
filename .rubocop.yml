@@ -1,6 +1,10 @@
-inherit_gem:
-  unasukecop:
-    - "config/rubocop.yml"
+AllCops:
+  Exclude:
+    - "**/*"
+
+# inherit_gem:
+#   unasukecop:
+#     - "config/rubocop.yml"
 
 Style/Documentation:
   Enabled: false
