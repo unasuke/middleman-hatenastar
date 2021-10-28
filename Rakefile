@@ -6,7 +6,7 @@ require 'rubocop/rake_task'
 
 RuboCop::RakeTask.new
 Cucumber::Rake::Task.new(:cucumber, 'Run features that should pass') do |t|
-  t.cucumber_opts = '--color --tags ~@wip --strict'
+  t.cucumber_opts = '--color --tags="not @wip" --strict'
 end
 
 require 'rake/clean'
