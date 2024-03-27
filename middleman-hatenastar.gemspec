@@ -16,11 +16,11 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  
+
   # The version of middleman-core your extension depends on
   s.add_runtime_dependency "middleman-core", ">= 4"
-  
-  s.add_development_dependency 'aruba'
+
+  s.add_development_dependency 'aruba', "~> 0.14"
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'codecov'
