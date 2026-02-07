@@ -1,0 +1,15 @@
+Rails:
+  Enabled: true
+
+# ignore auto generated file
+AllCops:
+  Exclude:
+    - "db/schema.rb"
+
+# should be use TimeWithZone
+Rails/Date:
+  EnforcedStyle: strict
+
+# should be careful to timezone
+Rails/TimeZone:
+  EnforcedStyle: strict

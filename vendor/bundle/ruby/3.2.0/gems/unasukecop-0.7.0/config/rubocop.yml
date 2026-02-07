@@ -1,0 +1,84 @@
+AllCops:
+  DisplayCopNames: true
+
+## Metrics
+
+# inherit from onkcop
+Metrics/LineLength:
+  Max: 160
+
+# inherit from onkcop
+Metrics/MethodLength:
+  Max: 20
+
+## Style
+
+# just a preference
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+# I like sprintf than format
+Style/FormatString:
+  EnforcedStyle: sprintf
+
+# not to use hash rockets
+# but unification is more important
+Style/HashSyntax:
+  EnforcedStyle: ruby19_no_mixed_keys
+
+# just a preference
+Style/InlineComment:
+  Enabled: false
+
+# I use both
+Style/RegexpLiteral:
+  EnforcedStyle: mixed
+
+# I don't want to be enforced
+# inherit from onkcop
+Style/SafeNavigation:
+  Enabled: false
+
+# my superior said
+# "if you need to use 'send', the code is do to something wrong"
+Style/Send:
+  Enabled: true
+
+# just a preference
+Style/SingleLineMethods:
+  AllowIfMethodIsEmpty: false
+
+# human readable
+Style/TernaryParentheses:
+  EnforcedStyle: require_parentheses_when_complex
+
+# I use trailing comma
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+# same as reason of Style/TrailingCommaInArguments
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+## Layout
+
+# just a preference
+Layout/BlockAlignment:
+  EnforcedStyleAlignWith: start_of_block
+
+# when copy-and-past to REPL, trailing dot is more safety
+# inherit from onkcop
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+# more short line length and compact diff when change method name
+# inherit from onkcop
+Layout/IndentFirstArrayElement:
+  EnforcedStyle: consistent
+
+# same as reason of Style/IndentArray
+Layout/IndentFirstHashElement:
+  EnforcedStyle: consistent

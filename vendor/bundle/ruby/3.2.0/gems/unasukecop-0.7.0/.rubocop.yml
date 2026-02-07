@@ -1,0 +1,4 @@
+inherit_from: 'config/rubocop.yml'
+
+Style/Documentation:
+  Enabled: false

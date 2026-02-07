@@ -1,0 +1,18 @@
+current directory: /home/runner/work/middleman-hatenastar/middleman-hatenastar/vendor/bundle/ruby/3.2.0/gems/fast_blank-1.0.1/ext/fast_blank
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+creating Makefile
+
+current directory: /home/runner/work/middleman-hatenastar/middleman-hatenastar/vendor/bundle/ruby/3.2.0/gems/fast_blank-1.0.1/ext/fast_blank
+make DESTDIR\= sitearchdir\=./.gem.20260207-3852-ugj4bz sitelibdir\=./.gem.20260207-3852-ugj4bz clean
+
+current directory: /home/runner/work/middleman-hatenastar/middleman-hatenastar/vendor/bundle/ruby/3.2.0/gems/fast_blank-1.0.1/ext/fast_blank
+make DESTDIR\= sitearchdir\=./.gem.20260207-3852-ugj4bz sitelibdir\=./.gem.20260207-3852-ugj4bz
+compiling fast_blank.c
+linking shared-object fast_blank.so
+
+current directory: /home/runner/work/middleman-hatenastar/middleman-hatenastar/vendor/bundle/ruby/3.2.0/gems/fast_blank-1.0.1/ext/fast_blank
+make DESTDIR\= sitearchdir\=./.gem.20260207-3852-ugj4bz sitelibdir\=./.gem.20260207-3852-ugj4bz install
+/usr/bin/install -c -m 0755 fast_blank.so ./.gem.20260207-3852-ugj4bz
+
+current directory: /home/runner/work/middleman-hatenastar/middleman-hatenastar/vendor/bundle/ruby/3.2.0/gems/fast_blank-1.0.1/ext/fast_blank
+make DESTDIR\= sitearchdir\=./.gem.20260207-3852-ugj4bz sitelibdir\=./.gem.20260207-3852-ugj4bz clean
