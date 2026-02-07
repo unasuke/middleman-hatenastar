@@ -44,7 +44,7 @@ RSpec.describe 'Middleman::Hatenastar::Generator' do
       end
 
       it 'should generate overwrited hatenastar tag' do
-        expect(generator.generate(another_option)).to eq <<~TAG
+        expect(generator.generate(**another_option)).to eq <<~TAG
           <script type="text/javascript" src="//s.hatena.ne.jp/js/HatenaStar.js"></script>
           <script type="text/javascript">
             Hatena.Star.Token = 'token-string';
