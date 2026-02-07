@@ -13,8 +13,3 @@ RSpec.configure do |config|
 end
 
 SimpleCov.start
-
-if ENV['CI']
-  require 'codecov'
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
-end
