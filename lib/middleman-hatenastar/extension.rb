@@ -5,7 +5,7 @@ module Middleman
   module Hatenastar
     class Extension < ::Middleman::Extension
       option :token,      nil,    'Your hatenastar token.'
-      option :uri,        'h3 a', 'Permarink of the entry.'
+      option :uri,        'h3 a', 'Permalink of the entry.'
       option :title,      'h3',   'Entry title.'
       option :container,  'h3',   'Set hatenastar to after of the this tag.'
       option :entry_node, 'div.section', 'Unit of each entry,'
